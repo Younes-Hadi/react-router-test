@@ -12,10 +12,11 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-          <Route path='/' element={<App/>}/>
+          <Route path='/' element={<App/>}>
           <Route path='/components/Books' element={<Books/>}/>
           <Route path="/components/CDs" element={<Cds/>}/>
-          <Route path='/components/Books/BookId' element={<Book/>}/>
+          <Route path='/components/Books/BookId' element={<Book/>}/>          
+          </Route>
       </Routes>    
     </BrowserRouter>
   </React.StrictMode>
