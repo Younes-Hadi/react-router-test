@@ -1,34 +1,32 @@
-import Cds from "../components/CDs";
-
 let cds = [
   {
     name: "Fifa",
-    number: 21,
-    amount: "50,000",
+    number: 1,
+    amount: "51,000",
     due: "1401/01/12",
   },
   {
     name: "UFC",
-    number: 22,
-    amount: "65,000",
+    number: 2,
+    amount: "66,000",
     due: "1400/12/22",
   },
   {
     name: "Gran Turizmo 7",
-    number: 23,
-    amount: "42,000",
+    number: 3,
+    amount: "45,000",
     due: "1400/08/03",
   },
   {
     name: "Forza Horizen",
-    number: 24,
-    amount: "75,000",
+    number: 4,
+    amount: "76,000",
     due: "1399/01/12",
   },
   {
     name: "Marvel's Spider-man",
-    number: 25,
-    amount: "52,000",
+    number: 5,
+    amount: "55,000",
     due: "1401/02/14",
   },
 ];
@@ -36,3 +34,7 @@ let cds = [
 export const getCds = () => {
   return cds;
 };
+
+export const getCdsNumberForCalling=(number)=>{
+  return cds.find(cd=>cd.number===number)
+}

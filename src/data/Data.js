@@ -34,3 +34,7 @@ let books = [
 export const getBooks = () => {
   return books;
 };
+
+export const getBookForNumberCall =(number)=>{
+  return books.find(book=>book.number===number)
+}

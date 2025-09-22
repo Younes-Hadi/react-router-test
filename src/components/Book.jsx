@@ -1,9 +1,12 @@
 import { useParams } from "react-router-dom";
-import Books from "./Books";
+import { getBookForNumberCall, getBooks } from "../data/Data"; 
+
 const Book=()=>{
+    const params=useParams();
+    const book=getBookForNumberCall(parseInt(params.bookId));
     return(
         <div>
-        <p>Book with a name : {Books.name}</p>
+            <p>Book with a name : {book.name}</p>
         </div>
     )
 }

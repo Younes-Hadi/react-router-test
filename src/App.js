@@ -6,9 +6,9 @@ import Books from './components/Books';
 function App() {
   return (
     <div className="App">
-      <h1>My CD's</h1>
+      <h1>My CDs and books</h1>
       <nav style={{borderBottom: "solid 1px" , paddingBottom:"1rem"}}>
-        <Link to="/components/Books">Books</Link>{" "}<Link to="/components/CDs">CD's</Link>
+        <Link to="/Books">Books</Link>{" "}<Link to="/CDs">CDs</Link>{" "}<Link to="/">Home</Link>
       </nav>
       <Outlet/>
     </div>
